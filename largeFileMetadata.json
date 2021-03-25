@@ -1,0 +1,727 @@
+{
+  "version": 1,
+  "schema": [
+    {
+      "type": null,
+      "type_length": null,
+      "repetition_type": null,
+      "name": "table",
+      "num_children": 5,
+      "converted_type": null,
+      "scale": null,
+      "precision": null,
+      "field_id": null,
+      "logicalType": null
+    },
+    {
+      "type": null,
+      "type_length": null,
+      "repetition_type": 1,
+      "name": "mobilePhone",
+      "num_children": 1,
+      "converted_type": null,
+      "scale": null,
+      "precision": null,
+      "field_id": 1,
+      "logicalType": null
+    },
+    {
+      "type": 6,
+      "type_length": null,
+      "repetition_type": 1,
+      "name": "number",
+      "num_children": null,
+      "converted_type": 0,
+      "scale": null,
+      "precision": null,
+      "field_id": 5,
+      "logicalType": {
+        "STRING": {},
+        "MAP": null,
+        "LIST": null,
+        "ENUM": null,
+        "DECIMAL": null,
+        "DATE": null,
+        "TIME": null,
+        "TIMESTAMP": null,
+        "INTEGER": null,
+        "UNKNOWN": null,
+        "JSON": null,
+        "BSON": null
+      }
+    },
+    {
+      "type": null,
+      "type_length": null,
+      "repetition_type": 1,
+      "name": "person",
+      "num_children": 1,
+      "converted_type": null,
+      "scale": null,
+      "precision": null,
+      "field_id": 8,
+      "logicalType": null
+    },
+    {
+      "type": null,
+      "type_length": null,
+      "repetition_type": 1,
+      "name": "name",
+      "num_children": 2,
+      "converted_type": null,
+      "scale": null,
+      "precision": null,
+      "field_id": 9,
+      "logicalType": null
+    },
+    {
+      "type": 6,
+      "type_length": null,
+      "repetition_type": 1,
+      "name": "firstName",
+      "num_children": null,
+      "converted_type": 0,
+      "scale": null,
+      "precision": null,
+      "field_id": 10,
+      "logicalType": {
+        "STRING": {},
+        "MAP": null,
+        "LIST": null,
+        "ENUM": null,
+        "DECIMAL": null,
+        "DATE": null,
+        "TIME": null,
+        "TIMESTAMP": null,
+        "INTEGER": null,
+        "UNKNOWN": null,
+        "JSON": null,
+        "BSON": null
+      }
+    },
+    {
+      "type": 6,
+      "type_length": null,
+      "repetition_type": 1,
+      "name": "lastName",
+      "num_children": null,
+      "converted_type": 0,
+      "scale": null,
+      "precision": null,
+      "field_id": 11,
+      "logicalType": {
+        "STRING": {},
+        "MAP": null,
+        "LIST": null,
+        "ENUM": null,
+        "DECIMAL": null,
+        "DATE": null,
+        "TIME": null,
+        "TIMESTAMP": null,
+        "INTEGER": null,
+        "UNKNOWN": null,
+        "JSON": null,
+        "BSON": null
+      }
+    },
+    {
+      "type": null,
+      "type_length": null,
+      "repetition_type": 1,
+      "name": "personalEmail",
+      "num_children": 1,
+      "converted_type": null,
+      "scale": null,
+      "precision": null,
+      "field_id": 2,
+      "logicalType": null
+    },
+    {
+      "type": 6,
+      "type_length": null,
+      "repetition_type": 1,
+      "name": "address",
+      "num_children": null,
+      "converted_type": 0,
+      "scale": null,
+      "precision": null,
+      "field_id": 6,
+      "logicalType": {
+        "STRING": {},
+        "MAP": null,
+        "LIST": null,
+        "ENUM": null,
+        "DECIMAL": null,
+        "DATE": null,
+        "TIME": null,
+        "TIMESTAMP": null,
+        "INTEGER": null,
+        "UNKNOWN": null,
+        "JSON": null,
+        "BSON": null
+      }
+    },
+    {
+      "type": null,
+      "type_length": null,
+      "repetition_type": 0,
+      "name": "_acp_system_metadata",
+      "num_children": 1,
+      "converted_type": null,
+      "scale": null,
+      "precision": null,
+      "field_id": 3,
+      "logicalType": null
+    },
+    {
+      "type": 6,
+      "type_length": null,
+      "repetition_type": 0,
+      "name": "acp_sourceBatchId",
+      "num_children": null,
+      "converted_type": 0,
+      "scale": null,
+      "precision": null,
+      "field_id": 7,
+      "logicalType": {
+        "STRING": {},
+        "MAP": null,
+        "LIST": null,
+        "ENUM": null,
+        "DECIMAL": null,
+        "DATE": null,
+        "TIME": null,
+        "TIMESTAMP": null,
+        "INTEGER": null,
+        "UNKNOWN": null,
+        "JSON": null,
+        "BSON": null
+      }
+    },
+    {
+      "type": 6,
+      "type_length": null,
+      "repetition_type": 0,
+      "name": "_ACP_BATCHID",
+      "num_children": null,
+      "converted_type": 0,
+      "scale": null,
+      "precision": null,
+      "field_id": 4,
+      "logicalType": {
+        "STRING": {},
+        "MAP": null,
+        "LIST": null,
+        "ENUM": null,
+        "DECIMAL": null,
+        "DATE": null,
+        "TIME": null,
+        "TIMESTAMP": null,
+        "INTEGER": null,
+        "UNKNOWN": null,
+        "JSON": null,
+        "BSON": null
+      }
+    }
+  ],
+  "num_rows": {
+    "buffer": { "type": "Buffer", "data": [0, 0, 0, 0, 0, 76, 75, 64] },
+    "offset": 0
+  },
+  "row_groups": [
+    {
+      "columns": [
+        {
+          "file_path": null,
+          "file_offset": {
+            "buffer": { "type": "Buffer", "data": [0, 0, 0, 0, 0, 0, 0, 4] },
+            "offset": 0
+          },
+          "meta_data": {
+            "type": 6,
+            "encodings": [0, 4, 3],
+            "path_in_schema": ["mobilePhone", "number"],
+            "codec": 1,
+            "num_values": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 76, 75, 64]
+              },
+              "offset": 0
+            },
+            "total_uncompressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 4, 44, 65, 142]
+              },
+              "offset": 0
+            },
+            "total_compressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 2, 240, 251, 193]
+              },
+              "offset": 0
+            },
+            "key_value_metadata": null,
+            "data_page_offset": {
+              "buffer": { "type": "Buffer", "data": [0, 0, 0, 0, 0, 0, 0, 4] },
+              "offset": 0
+            },
+            "index_page_offset": null,
+            "dictionary_page_offset": null,
+            "statistics": {
+              "null_count": {
+                "buffer": {
+                  "type": "Buffer",
+                  "data": [0, 0, 0, 0, 0, 0, 0, 0]
+                },
+                "offset": 0
+              },
+              "distinct_count": null,
+              "max_value": "9999996645",
+              "min_value": "0000001080"
+            },
+            "encoding_stats": [{ "page_type": 0, "encoding": 0, "count": 250 }]
+          },
+          "offset_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 180, 9, 118]
+            },
+            "offset": 0
+          },
+          "offset_index_length": 3692,
+          "column_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 179, 48, 160]
+            },
+            "offset": 0
+          },
+          "column_index_length": 6019
+        },
+        {
+          "file_path": null,
+          "file_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 2, 240, 251, 197]
+            },
+            "offset": 0
+          },
+          "meta_data": {
+            "type": 6,
+            "encodings": [4, 2, 3],
+            "path_in_schema": ["person", "name", "firstName"],
+            "codec": 1,
+            "num_values": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 76, 75, 64]
+              },
+              "offset": 0
+            },
+            "total_uncompressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 115, 50, 57]
+              },
+              "offset": 0
+            },
+            "total_compressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 115, 17, 57]
+              },
+              "offset": 0
+            },
+            "key_value_metadata": null,
+            "data_page_offset": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 2, 240, 251, 197]
+              },
+              "offset": 0
+            },
+            "index_page_offset": null,
+            "dictionary_page_offset": null,
+            "statistics": {
+              "null_count": {
+                "buffer": {
+                  "type": "Buffer",
+                  "data": [0, 0, 0, 0, 0, 0, 0, 0]
+                },
+                "offset": 0
+              },
+              "distinct_count": null,
+              "max_value": "Zula",
+              "min_value": "Aaliyah"
+            },
+            "encoding_stats": [
+              { "page_type": 2, "encoding": 2, "count": 1 },
+              { "page_type": 0, "encoding": 2, "count": 250 }
+            ]
+          },
+          "offset_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 180, 23, 226]
+            },
+            "offset": 0
+          },
+          "offset_index_length": 3700,
+          "column_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 179, 72, 35]
+            },
+            "offset": 0
+          },
+          "column_index_length": 3769
+        },
+        {
+          "file_path": null,
+          "file_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 3, 100, 12, 254]
+            },
+            "offset": 0
+          },
+          "meta_data": {
+            "type": 6,
+            "encodings": [4, 2, 3],
+            "path_in_schema": ["person", "name", "lastName"],
+            "codec": 1,
+            "num_values": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 76, 75, 64]
+              },
+              "offset": 0
+            },
+            "total_uncompressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 86, 52, 85]
+              },
+              "offset": 0
+            },
+            "total_compressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 86, 53, 148]
+              },
+              "offset": 0
+            },
+            "key_value_metadata": null,
+            "data_page_offset": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 3, 100, 12, 254]
+              },
+              "offset": 0
+            },
+            "index_page_offset": null,
+            "dictionary_page_offset": null,
+            "statistics": {
+              "null_count": {
+                "buffer": {
+                  "type": "Buffer",
+                  "data": [0, 0, 0, 0, 0, 0, 0, 0]
+                },
+                "offset": 0
+              },
+              "distinct_count": null,
+              "max_value": "Zulauf",
+              "min_value": "Abbott"
+            },
+            "encoding_stats": [
+              { "page_type": 2, "encoding": 2, "count": 1 },
+              { "page_type": 0, "encoding": 2, "count": 250 }
+            ]
+          },
+          "offset_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 180, 38, 86]
+            },
+            "offset": 0
+          },
+          "offset_index_length": 3700,
+          "column_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 179, 86, 220]
+            },
+            "offset": 0
+          },
+          "column_index_length": 4019
+        },
+        {
+          "file_path": null,
+          "file_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 3, 186, 66, 146]
+            },
+            "offset": 0
+          },
+          "meta_data": {
+            "type": 6,
+            "encodings": [0, 4, 3],
+            "path_in_schema": ["personalEmail", "address"],
+            "codec": 1,
+            "num_values": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 76, 75, 64]
+              },
+              "offset": 0
+            },
+            "total_uncompressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 8, 108, 32, 218]
+              },
+              "offset": 0
+            },
+            "total_compressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 3, 248, 177, 28]
+              },
+              "offset": 0
+            },
+            "key_value_metadata": null,
+            "data_page_offset": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 3, 186, 66, 146]
+              },
+              "offset": 0
+            },
+            "index_page_offset": null,
+            "dictionary_page_offset": null,
+            "statistics": {
+              "null_count": {
+                "buffer": {
+                  "type": "Buffer",
+                  "data": [0, 0, 0, 0, 0, 0, 0, 0]
+                },
+                "offset": 0
+              },
+              "distinct_count": null,
+              "max_value": "Zula_Zulauf@example.org",
+              "min_value": "Aaliyah.Abbott@example.org"
+            },
+            "encoding_stats": [{ "page_type": 0, "encoding": 0, "count": 250 }]
+          },
+          "offset_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 180, 52, 202]
+            },
+            "offset": 0
+          },
+          "offset_index_length": 3700,
+          "column_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 179, 102, 143]
+            },
+            "offset": 0
+          },
+          "column_index_length": 13665
+        },
+        {
+          "file_path": null,
+          "file_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 178, 243, 174]
+            },
+            "offset": 0
+          },
+          "meta_data": {
+            "type": 6,
+            "encodings": [4, 2],
+            "path_in_schema": ["_acp_system_metadata", "acp_sourceBatchId"],
+            "codec": 1,
+            "num_values": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 76, 75, 64]
+              },
+              "offset": 0
+            },
+            "total_uncompressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 0, 28, 131]
+              },
+              "offset": 0
+            },
+            "total_compressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 0, 30, 121]
+              },
+              "offset": 0
+            },
+            "key_value_metadata": null,
+            "data_page_offset": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 7, 178, 243, 174]
+              },
+              "offset": 0
+            },
+            "index_page_offset": null,
+            "dictionary_page_offset": null,
+            "statistics": {
+              "max": "01ERFRBGK92JEP927235CH8E05",
+              "min": "01ERFRBGK92JEP927235CH8E05",
+              "null_count": {
+                "buffer": {
+                  "type": "Buffer",
+                  "data": [0, 0, 0, 0, 0, 0, 0, 0]
+                },
+                "offset": 0
+              },
+              "distinct_count": null,
+              "max_value": "01ERFRBGK92JEP927235CH8E05",
+              "min_value": "01ERFRBGK92JEP927235CH8E05"
+            },
+            "encoding_stats": [
+              { "page_type": 2, "encoding": 2, "count": 1 },
+              { "page_type": 0, "encoding": 2, "count": 250 }
+            ]
+          },
+          "offset_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 180, 67, 62]
+            },
+            "offset": 0
+          },
+          "offset_index_length": 3200,
+          "column_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 179, 155, 240]
+            },
+            "offset": 0
+          },
+          "column_index_length": 14019
+        },
+        {
+          "file_path": null,
+          "file_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 179, 18, 39]
+            },
+            "offset": 0
+          },
+          "meta_data": {
+            "type": 6,
+            "encodings": [4, 2],
+            "path_in_schema": ["_ACP_BATCHID"],
+            "codec": 1,
+            "num_values": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 76, 75, 64]
+              },
+              "offset": 0
+            },
+            "total_uncompressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 0, 28, 131]
+              },
+              "offset": 0
+            },
+            "total_compressed_size": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 0, 0, 30, 121]
+              },
+              "offset": 0
+            },
+            "key_value_metadata": null,
+            "data_page_offset": {
+              "buffer": {
+                "type": "Buffer",
+                "data": [0, 0, 0, 0, 7, 179, 18, 39]
+              },
+              "offset": 0
+            },
+            "index_page_offset": null,
+            "dictionary_page_offset": null,
+            "statistics": {
+              "max": "01ERFRBGK92JEP927235CH8E05",
+              "min": "01ERFRBGK92JEP927235CH8E05",
+              "null_count": {
+                "buffer": {
+                  "type": "Buffer",
+                  "data": [0, 0, 0, 0, 0, 0, 0, 0]
+                },
+                "offset": 0
+              },
+              "distinct_count": null,
+              "max_value": "01ERFRBGK92JEP927235CH8E05",
+              "min_value": "01ERFRBGK92JEP927235CH8E05"
+            },
+            "encoding_stats": [
+              { "page_type": 2, "encoding": 2, "count": 1 },
+              { "page_type": 0, "encoding": 2, "count": 250 }
+            ]
+          },
+          "offset_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 180, 79, 190]
+            },
+            "offset": 0
+          },
+          "offset_index_length": 3200,
+          "column_index_offset": {
+            "buffer": {
+              "type": "Buffer",
+              "data": [0, 0, 0, 0, 7, 179, 210, 179]
+            },
+            "offset": 0
+          },
+          "column_index_length": 14019
+        }
+      ],
+      "total_byte_size": {
+        "buffer": { "type": "Buffer", "data": [0, 0, 0, 0, 13, 98, 1, 252] },
+        "offset": 0
+      },
+      "num_rows": {
+        "buffer": { "type": "Buffer", "data": [0, 0, 0, 0, 0, 76, 75, 64] },
+        "offset": 0
+      },
+      "sorting_columns": null
+    }
+  ],
+  "key_value_metadata": [
+    {
+      "key": "iceberg.schema",
+      "value": "{\"type\":\"struct\",\"fields\":[{\"id\":1,\"name\":\"mobilePhone\",\"required\":false,\"type\":{\"type\":\"struct\",\"fields\":[{\"id\":5,\"name\":\"number\",\"required\":false,\"type\":\"string\"}]}},{\"id\":8,\"name\":\"person\",\"required\":false,\"type\":{\"type\":\"struct\",\"fields\":[{\"id\":9,\"name\":\"name\",\"required\":false,\"type\":{\"type\":\"struct\",\"fields\":[{\"id\":10,\"name\":\"firstName\",\"required\":false,\"type\":\"string\"},{\"id\":11,\"name\":\"lastName\",\"required\":false,\"type\":\"string\"}]}}]}},{\"id\":2,\"name\":\"personalEmail\",\"required\":false,\"type\":{\"type\":\"struct\",\"fields\":[{\"id\":6,\"name\":\"address\",\"required\":false,\"type\":\"string\"}]}},{\"id\":3,\"name\":\"_acp_system_metadata\",\"required\":true,\"type\":{\"type\":\"struct\",\"fields\":[{\"id\":7,\"name\":\"acp_sourceBatchId\",\"required\":true,\"type\":\"string\"}]}},{\"id\":4,\"name\":\"_ACP_BATCHID\",\"required\":true,\"type\":\"string\"}]}"
+    }
+  ],
+  "created_by": "parquet-mr version 1.11.0 (build 18519eb8e059865652eee3ff0e8593f126701da4)",
+  "column_orders": [
+    { "TYPE_ORDER": {} },
+    { "TYPE_ORDER": {} },
+    { "TYPE_ORDER": {} },
+    { "TYPE_ORDER": {} },
+    { "TYPE_ORDER": {} },
+    { "TYPE_ORDER": {} }
+  ]
+}

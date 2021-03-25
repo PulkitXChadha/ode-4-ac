@@ -1,0 +1,117 @@
+packages:
+  __APP_PACKAGE__:
+    license: Apache-2.0
+    actions:
+      get-ims-token:
+        function: actions/global/get-ims-token.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          apiKey: $SERVICE_API_KEY
+          clientSecret: $CLIENT_SECRET
+          techAcctId: $TECH_ACCT_ID
+          techAcctEmail: $TECH_ACCT_EMAIL
+          privateKey: $PRIVATE_KEY
+          metaScope: $META_SCOPES
+          imsOrg: $IMS_ORG
+        annotations:
+          final: true
+      get-batch-files:
+        function: actions/AEP/Data Access/get-batch-files.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          apiKey: $SERVICE_API_KEY
+          imsOrg: $IMS_ORG
+        annotations:
+          final: true
+      check-batch-status:
+        function: actions/AEP/Data Access/check-batch-status.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          final: true
+      check-datasetfile-status:
+        function: actions/AEP/Data Access/check-datasetfile-status.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          final: true
+      get-file-path:
+        function: actions/AEP/Data Access/get-file-path.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          apiKey: $SERVICE_API_KEY
+          imsOrg: $IMS_ORG
+        annotations:
+          final: true
+      get-parquet-file-content:
+        function: actions/AEP/Data Access/get-parquet-file-content.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          apiKey: $SERVICE_API_KEY
+          imsOrg: $IMS_ORG
+        annotations:
+          final: true
+        limits:
+          timeout: 600000
+          memorySize: 2048
+      convert-parquet-to-json:
+        function: actions/services/convert-parquet-to-json.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          final: true
+      convert-parquet-to-csv:
+        function: actions/services/convert-parquet-to-csv.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          final: true
+        limits:
+          timeout: 1800000
+          memorySize: 2048
+      get-file-presigned-url:
+        function: actions/services/get-file-presigned-url.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          final: true
+      convert-batch-files-to-csv:
+        function: actions/services/convert-batch-files-to-csv.js
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+        annotations:
+          final: true
+      publish-events:
+        function: actions/publish-events/index.js
+        web: 'yes'
+        runtime: 'nodejs:12'
+        inputs:
+          LOG_LEVEL: debug
+          apiKey: $SERVICE_API_KEY
+        annotations:
+          require-adobe-auth: true
+          final: true
+    sequences:
+      process-datasetfile:
+        actions: get-file-path, check-datasetfile-status
+      process-batch:
+        actions: get-batch-files, check-batch-status
+    triggers:
+      atMidnight:
+        feed: /whisk.system/alarms/alarm
+        inputs: 
+          cron: "0 0 * * *"
+    rules:
+      atMidnightRule:
+        trigger: atMidnight
+        action: get-ims-token
